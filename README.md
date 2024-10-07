@@ -9,6 +9,6 @@ This is an ongoing e-commerce platform built using the **MERN stack** (MongoDB, 
 - **Shopping Cart**: Users can add/remove items from the cart.
 - **Order Management**: Users can place orders; admins can view and manage orders.(upcoming)
 - **Responsive Design**: Optimized for desktop and mobile devices.(upcoming)
-- **Payment Gateway**: Integration for handling payments (Upcoming feature).
+- **Payment Gateway**: Integration for handling payments.(Upcoming)
 
 
