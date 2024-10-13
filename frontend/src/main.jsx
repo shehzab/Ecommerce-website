@@ -17,6 +17,7 @@ import PrivateRoute from './components/PrivateRoute.jsx'
 import Login from './pages/Auth/Login.jsx'
 import Register from './pages/Auth/Register.jsx'
 
+
 import Profile from './pages/User/Profile.jsx'
 
 import AdminRoute from './pages/Admin/AdminRoute.jsx'
@@ -25,6 +26,7 @@ import CategoryList from './pages/Admin/CategoryList.jsx'
 import ProductList from './pages/Admin/ProductList.jsx'
 import AllProducts from './pages/Admin/AllProducts.jsx'
 import ProductUpdate from './pages/Admin/ProductUpdate.jsx'
+import Home from './Home.jsx'
 
 
 const router = createBrowserRouter(
@@ -32,6 +34,7 @@ const router = createBrowserRouter(
     <Route path ='/' element={<App/>}>
       <Route path='/login' element={<Login />}/>
       <Route path ='/Register' element={<Register/>}/>
+      <Route index={true} path='/' element={<Home />} />
 
       <Route path='' element= {<PrivateRoute />}>
         <Route path='/profile' element={<Profile />} />
@@ -43,7 +46,7 @@ const router = createBrowserRouter(
       <Route path='categorylist' element={<CategoryList />} />
       <Route path='productlist' element={<ProductList />} />
       <Route path='allproductslist' element={<AllProducts />} />
-      <Route path='product/update/:id' element={<ProductUpdate />} />
+      <Route path='product/update/:_id' element={<ProductUpdate />} />
     </Route>
     
 
