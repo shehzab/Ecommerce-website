@@ -36,7 +36,7 @@ const ProductCarousel = () => {
                 {error?.data?.message || error.error}
             </Message>
         ):(
-            <slider
+            <Slider
                 {...settings}
                 className="xl:w-[50rem] lg:w-[56rem] sm:w-[40rem] sm:block"
             >
@@ -91,7 +91,7 @@ const ProductCarousel = () => {
                                         </h1>
                                         <h1 className="flex items-center mb-6">
                                             <FaShoppingCart className="mr-2 text-white"/> Quantity:{" "}
-                                            {countInStock}
+                                            {quantity}
                                         </h1>
                                         <h1 className="flex items-center mb-6">
                                             <FaBox className="mr-2 text-white"/>In Stock: {" "}
@@ -105,7 +105,7 @@ const ProductCarousel = () => {
                         </div>
                     )
                 )}
-            </slider>
+            </Slider>
         )
     }
     </div>
